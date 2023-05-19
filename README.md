@@ -53,7 +53,7 @@ GET http://localhost:3030/api/snapshots/should_retain?plan=Pro&date=2023/05/31
 * I thinking good to develop a gem for providing this service.
 ### Development environment
 
-* before run all commands, open this folder backup_retention_plan and continue the steps
+* before run all commands, open this folder backup retention plan and continue the steps inside a folder
 #### Commands
 Build the container step 1
 
