@@ -39,8 +39,7 @@ GET http://localhost:3030/api/snapshots/should_retain?plan=Pro&date=2023/05/31
 * Response if params pass plan wrong
 ```bash
 {
-	"messenger": "Some params are not present!",
-	"status": "unprocessable_entity"
+  "should_retain": false
 }
 ```
 * Response if params incorrect
