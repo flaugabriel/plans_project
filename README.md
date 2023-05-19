@@ -16,6 +16,11 @@ Run application api step 2
 docker-compose up
 ```
 OBS: Step 1 can be run one time. and The database table is configured but not used.
+### Test environment
+* run this command 
+```bash
+docker exec -it skie_plans_project-my_plans_api-1 rspec
+```
 ### Endpoint
 * Use this endpoint for checkt de result of backup retentions
 * params required:
