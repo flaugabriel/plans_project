@@ -2,11 +2,11 @@
 This project is used for the evaluation of my hard skills in programming.
 ## My plan api
 * The API
-
+ Can provide the endpoint for check Retains
 ### Development environment
 #### Commands
 Build the container step 1
-
+In / raiz folder run
 ```bash
 docker-compose build
 ```
