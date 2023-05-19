@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "Gem become a proposit to specific plans cam be retained or deleted based on the defined rules"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
+  spec.homepage ="https://rubygems.org/gems/backup_retention_plan"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

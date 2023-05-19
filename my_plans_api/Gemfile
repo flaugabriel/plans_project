@@ -9,8 +9,17 @@ gem "puma", "~> 5.0"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "rack-cors"
+gem 'backup_retention_plan', '~> 1.0'
 
 group :development, :test do
-  gem "rubocop", "~> 1.21"
+  gem 'rspec-rails', '~> 4.0'
+  gem 'database_cleaner'
+  gem 'debug', platforms: %i[ mri mingw x64_mingw ]
+  gem 'shoulda-matchers', require: false
+  gem 'pry'
+  gem 'faker'
+  gem 'listen', '~> 3.3'
+  gem 'spring'
+  gem 'rubocop-rails'
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end

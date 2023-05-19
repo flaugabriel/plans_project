@@ -10,7 +10,7 @@ RSpec.describe BackupRetentionPlan do
         expect(retention_plan).to be true
       end
 
-      it 'deletes snapshot outside the retention period' do
+      it 'deletes snapshot outside the retention on period' do
         retention_plan = BackupRetentionPlan.should_retain('Beginner', '2023/1/23')
         expect(retention_plan).to be false
       end

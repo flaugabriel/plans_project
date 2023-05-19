@@ -31,6 +31,20 @@ GET http://localhost:3030/api/snapshots/should_retain?plan=Pro&date=2023/05/31
   "should_retain": true
 }
 ```
+* Response if params incorrect
+```bash
+{
+	"messenger": "Some params are not present!",
+	"status": "unprocessable_entity"
+}
+```
+* Response if params incorrect
+```bash
+{
+	"messenger": "Some params are not present!",
+	"status": "unprocessable_entity"
+}
+```
 ## The library
 * I thinking good to develop a gem for providing this service.
 ### Development environment
