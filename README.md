@@ -31,7 +31,7 @@ GET http://localhost:3030/api/snapshots/should_retain?plan=Pro&date=2023/05/31
   "should_retain": true
 }
 ```
-* Response if params incorrect
+* Response if params pass plan wrong
 ```bash
 {
 	"messenger": "Some params are not present!",
