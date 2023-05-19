@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  backup_retention_plan:
+    build: 
+      context: .
+    container_name: gem_backup_retention_plan
+    volumes:
+      - .:/app

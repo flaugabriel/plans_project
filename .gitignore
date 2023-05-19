@@ -1,0 +1,33 @@
+my_plans_api/.bundle
+/.project
+my_plans_api/log/*.log
+my_plans_api/tmp/**/*
+my_plans_api/public/uploads/*
+my_plans_api/fig.yml
+my_plans_api/public/file_storage/
+my_plans_api/public/javascripts/*
+my_plans_api/public/storage/*
+my_plans_api/public/version
+node_modules
+coverage
+backup_retention_plan/.byebug_history
+backup_retention_plan/coverage
+#VScode
+.vscode/
+
+#Swap file vim
+.*.swp
+
+# RVM gemset name
+.ruby-gemset
+
+.byebug_history
+
+# Ignore IntelliJ’s project specific settings folder
+.idea/
+./my_plans_api/.idea
+./my_plans_api/.vscode/
+
+# Auto generated ERD file
+# vscode
+.vscode
