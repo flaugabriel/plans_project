@@ -66,6 +66,6 @@ docker-compose build
 Run application specs step 2
 
 ```bash
-docker compose run --rm backup_retention_plan rspec
+docker-compose run --rm backup_retention_plan rake spec
 ```
 OBS: Step 1 can be run one time.
