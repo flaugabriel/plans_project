@@ -11,22 +11,25 @@ In / raiz folder run
 docker-compose build
 ```
 Run application api step 2
-
 ```bash
 docker-compose up
+```
+Run config database
+```bash
+docker compose run --rm my_plans_api rails db:migrate
 ```
 OBS: Step 1 can be run one time. and The database table is configured but not used.
 ### Test environment
 * run this command 
 ```bash
-docker exec -it skie_plans_project-my_plans_api-1 rspec
+docker compose run --rm my_plans_api rspec
 ```
 ### Endpoint
 * Use this endpoint for checkt de result of backup retentions
 * params required:
   * plan (String) example: plan=Ultra
   * date (String date format) example: date=2023/05/31
-* Request
+* Request copy and paste in your browser
 ```bash
 GET http://localhost:3030/api/snapshots/should_retain?plan=Pro&date=2023/05/31
 ```
@@ -36,7 +39,7 @@ GET http://localhost:3030/api/snapshots/should_retain?plan=Pro&date=2023/05/31
   "should_retain": true
 }
 ```
-* Response if params pass plan wrong
+* Response if params pass plan wrong or date 
 ```bash
 {
   "should_retain": false
@@ -63,6 +66,6 @@ docker-compose build
 Run application specs step 2
 
 ```bash
-docker-compose run --rm backup_retention_plan rake spec
+docker compose run --rm backup_retention_plan rspec
 ```
 OBS: Step 1 can be run one time.
