@@ -39,8 +39,7 @@ GET http://localhost:3030/api/snapshots/should_retain?plan=Pro&date=2023/05/31
 * Response if params pass plan wrong
 ```bash
 {
-	"messenger": "Some params are not present!",
-	"status": "unprocessable_entity"
+  "should_retain": false
 }
 ```
 * Response if params incorrect
@@ -51,10 +50,10 @@ GET http://localhost:3030/api/snapshots/should_retain?plan=Pro&date=2023/05/31
 }
 ```
 ## The library
-* I thinking good to develop a gem for providing this service.
+* I thinking good to develop a gem for providing this service. [backup_retention_plan](https://rubygems.org/gems/backup_retention_plan)
 ### Development environment
 
-* before run all commands, open this folder backup_retention_plan and continue the steps
+* before run all commands, open this folder backup retention plan and continue the steps inside a folder
 #### Commands
 Build the container step 1
 
