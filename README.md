@@ -7,21 +7,21 @@ This project is used for the evaluation of my hard skills in programming.
 #### Commands
 Build the container step 1
 In / raiz folder run
-```bash
+```code
 docker-compose build
 ```
 Run application api step 2
-```bash
+```code
 docker-compose up
 ```
 Run config database
-```bash
+```code
 docker compose run --rm my_plans_api rails db:migrate
 ```
 OBS: Step 1 can be run one time. and The database table is configured but not used.
 ### Test environment
 * run this command 
-```bash
+```code
 docker compose run --rm my_plans_api rspec
 ```
 ### Endpoint
@@ -30,23 +30,23 @@ docker compose run --rm my_plans_api rspec
   * plan (String) example: plan=Ultra
   * date (String date format) example: date=2023/05/31
 * Request copy and paste in your browser
-```bash
+```code
 GET http://localhost:3030/api/snapshots/should_retain?plan=Pro&date=2023/05/31
 ```
 * Response
-```bash
+```code
 {
   "should_retain": true
 }
 ```
 * Response if params pass plan wrong or date 
-```bash
+```code
 {
   "should_retain": false
 }
 ```
 * Response if params incorrect
-```bash
+```code
 {
 	"messenger": "Some params are not present!",
 	"status": "unprocessable_entity"
@@ -60,12 +60,12 @@ GET http://localhost:3030/api/snapshots/should_retain?plan=Pro&date=2023/05/31
 #### Commands
 Build the container step 1
 
-```bash
+```code
 docker-compose build
 ```
 Run application specs step 2
 
-```bash
+```code
 docker-compose run --rm backup_retention_plan rake spec
 ```
 OBS: Step 1 can be run one time.
