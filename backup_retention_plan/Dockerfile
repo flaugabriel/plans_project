@@ -16,7 +16,7 @@ RUN groupadd -f "${GROUP}" -g 4444 \
   && chown "${USER}" /usr/local/bundle/
 
 COPY --chown="${USER}:${GROUP}" Gemfile Gemfile.lock backup_retention_plan.gemspec ./
-COPY --chown="${USER}:${GROUP}" lib/backup_retention_plan/version.rb lib/backup_retention_plan/version.rb
+COPY --chown="${USER}:${GROUP}" lib/version.rb lib/version.rb
 
 USER "${USER}"
 
