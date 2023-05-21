@@ -52,7 +52,7 @@ OBS: Step 1 can be run one time. and The database table is configured but not us
 ```code
 docker compose run --rm my_plans_api rspec
 ```
-## gem library
+## library gem
 * I thinking good to develop a gem for providing this service. [backup_retention_plan](https://rubygems.org/gems/backup_retention_plan)
 ### Development environment
 
